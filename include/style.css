@@ -150,6 +150,7 @@ a {
 }
 #happy span {
   display: inline-block;
+  white-space: pre;
 }
 
 /* SOCIAL MEDIA */
