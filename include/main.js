@@ -105,13 +105,13 @@ document.addEventListener('DOMContentLoaded', function(e) {
 
   var sheepLetters = document.getElementById('happy');
   var varters = [];
-  for (var i = 0; i < 15; i++) {
+  for (var i = 0; i < 14; i++) {
     varters.push({pos: 0, vel: 0});
   }
   var animating = false;
   function bounceLetters(args) {
     var stop = true;
-    for (var i = 0; i < 15; i++) {
+    for (var i = 0; i < 14; i++) {
       varters[i].vel = -varters[i].pos / 10 + varters[i].vel * 0.9;
       varters[i].pos += varters[i].vel;
       sheepLetters.children[i].style.transform = 'translateY(' + varters[i].pos + 'px)';
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     }
     if (stop) {
       animating = false;
-      for (var i = 0; i < 15; i++) {
+      for (var i = 0; i < 14; i++) {
         sheepLetters.children[i].style.transform = null;
       }
     }
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
     sheepLetters.click();
   });
   sheepLetters.addEventListener('click', function(e) {
-    for (var i = 0; i < 15; i++) {
+    for (var i = 0; i < 14; i++) {
       varters[i].vel += (Math.random() < 0.5 ? 1 : -1) * (Math.random() * 5 + 4);
     }
     if (!animating) {
