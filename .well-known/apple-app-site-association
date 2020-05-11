@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "details": [
+       {
+         "appIDs": [ "5MT7TY2WYN.app.thingkingland.Image2Text" ],
+         "components": [
+           {
+             "/": "/apps/Image2Text/*"
+           }
+         ]
+       }
+    ]
+  }
+}
